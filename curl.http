@@ -1,0 +1,39 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/todos
+Accept: application/json
+
+###
+
+GET http://localhost:8080/todos/1
+Accept: application/json
+
+###
+
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "task": "Learn Database",
+  "completed": false
+}
+
+###
+
+PUT http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "task": "Learn Others",
+  "completed": false
+}
+
+###
+
+DELETE http://localhost:8080/todos/1
+Accept: application/json
+
+###
